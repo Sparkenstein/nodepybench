@@ -15,12 +15,18 @@ python fiboJIT.py
 echo "\n"
 echo ###############
 
-
-echo running PyPy3
-pypy3 fibopypy.py
+echo running CPython with LRU cache 
+python fibocached.py
 echo "\n"
 echo ###############
 
+
+if [ -x "$(command -v pypy3)" ]; then
+    echo running PyPy3
+    pypy3 fibopypy.py
+    echo "\n"
+    echo ###############
+fi
 
 # echo running RustPython
 # rustpython fiborustpython.py
@@ -33,4 +39,3 @@ python fiboc.py
 echo "\n"
 echo ###############
 
-echo ###############

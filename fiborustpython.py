@@ -5,6 +5,7 @@ def fib(n):
     print("iteration", n)
     return 1
   return fib(n - 1) + fib(n - 2)
+
 t0 = time.time()
 fib(10)
 t1 = time.time()

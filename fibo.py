@@ -17,6 +17,6 @@ def fib2(nterms):
   return n2
 
 t0 = time.time()
-fib2(35)
+fib(35)
 t1 = time.time()
 print(f"{(t1 - t0) * 1000} ms")
