@@ -25,6 +25,6 @@ const {
   // fib(35);
   // console.log(fib(5) === fibo2(5))
   const t0 = performance.now();
-  fibo(35);
+  fib(35);
   const t1 = performance.now();
   console.log(`${t1 - t0} ms`);
